@@ -1,0 +1,42 @@
+.dialogContainer {
+    width: clamp(260px, 70vmin, 800px);
+    max-height: 80vh;
+    background-color: #2B2C28;
+    color: #FFFAFB;
+    border-radius: clamp(0.5rem, 1vw , 1rem);
+    position: relative;
+    padding: 20px 20px;
+}
+
+.close-btn {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: orangered;
+    transform: scale(110%);
+    transition: all ease-in 0.2s;
+}
+
+.close-btn:active {
+    background-color: orangered;
+    transform: scale(105%);
+    transition: all ease-in 0.1s;
+}
+
+.close-btn::after {
+    content: 'X';
+    position: absolute;
+    font-size: large;
+    left: 15px;
+    top: 7px;
+}

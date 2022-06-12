@@ -1,0 +1,82 @@
+.mainContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.gridContainer {
+    align-items: flex-center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 3vmin;
+}
+
+@media only screen and (max-width: 545px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bodyTitle {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: clamp(200px, 90vw, 800px);
+    max-height: 50px;
+    background-color: #23262B;
+}
+
+@media screen and (max-width: 825px) {
+    .bodyTitle {
+        z-index: 1;
+    }
+}
+
+.bodyTitle h2 {
+    padding: 0 35px;
+    font-size: clamp(0.9rem, 2vw , 1rem);
+}
+
+.paginationContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 35px;
+}
+
+.paginationDetails {
+    padding: 0 5px;
+    border: 2px solid white;
+    border-radius: clamp(0.4rem, 1vw , 0.5rem);
+}
+
+.icon img {
+    filter: invert(100%);
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    padding: 0 5px;
+}
+
+.icon img:hover {
+    transform: scale(110%);
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    transition: 0.2s;
+    filter: invert(80%);
+}
+
+.icon img:active {
+    transform: scale(105%);
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+    filter: invert(80%);
+}

@@ -1,0 +1,32 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240;
+    height: 150;
+    border-radius: clamp(0.5rem, 1vw , 1rem);
+}
+
+.gifContainer {
+    object-fit: contain;
+    object-position: center center;
+    border-radius: clamp(0.5rem, 1vw , 1rem);
+    background-color: #2B2C28;
+    border: 2px solid #2B2C28;
+    cursor: pointer;
+}
+
+.gifContainer:hover {
+    transform: scale(130%);
+    transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    transition-delay: 0.05s;
+}
+
+.gifContainer:active {
+    transform: scale(125%);
+    transition: all ease-in 0.1s;
+    -webkit-transition: all ease-in 0.1s;
+    -moz-transition: all ease-in 0.1s;
+}

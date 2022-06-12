@@ -1,0 +1,53 @@
+.previewContainer {
+    display: grid;
+    grid-template-rows: 120px 1fr 120px;
+    justify-content: center;
+    align-items: center;
+    /* grid-gap: 4px; */
+    max-height: 80vh;
+}
+
+.previewRow {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewUrl {
+    width: calc(70vmin - 50px);
+    display: flex;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 15px;
+    font-size: small;
+    text-align: justify;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 410px) {
+    .previewUrl {
+        visibility: hidden;
+    }
+}
+
+.previewUrl:hover {
+    background-color: #333;
+    transition: all ease-in-out 0.2s;
+}
+
+.previewUrl p {
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.previewUrl::after {
+    content: url('../../../../assets/images/copy.png');
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}

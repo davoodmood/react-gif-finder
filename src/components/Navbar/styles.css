@@ -1,0 +1,16 @@
+.headerContainer {
+    background-color: #2B2C28;
+    color: #FFFAFB;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.searchBar {
+    position: relative;
+}
