@@ -34,7 +34,8 @@ A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](https:
 
 * Overall, I tried to include intention-revealing names for all variables to keep the code undestandable for others.
 * I tested the app for responsiveness on 14 development device screens, expecting it be functionally responsive. 
-* While the app is mannually end to end tested. The challenge timeline confinded me to skip unit test writing, but I can add in a later commit.
+* The app is mannually end to end tested. The challenge timeline confinded me to skip unit test writing, but I can add in a later commit.
+* All the selected gif renditions object is available in Modal component, but ux-wise i decided to display a downsized version as ui/ux decision permission was offered. 
 
 
 ## RUN IT YOURSELF
