@@ -1,6 +1,6 @@
-declare module gyphyPagination {
+declare module giphyPagination {
 
-    export interface gyphyPaginationObject {
+    export interface giphyPaginationObject {
         total_count: number;
         count: number;
         offset: number;

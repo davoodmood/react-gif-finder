@@ -1,12 +1,47 @@
-# Getting Started with Create React App
+# React Gif Finder App Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Gif Finder is a simple app challenge completed in around 3.5 hours for the bare bone of the project. I spend some extra time on refactoring the code, manually testing the app and add responsive styling to some sections. I decided to bootstrap the app with bootstrapped with [Create React App](https://github.com/facebook/create-react-app), becasue it is a recommendation from the react docs and facilitates the initialization of a bare bone project. For the app styling I used `css` over `sass` becasue I'm usually having more fun with that for quick small projects.
+
+
+## Project Structure
+
+I initially drew a quick wireframe as a visual guide to pre-plan a layout and facilitate a mental roadmap of which react hooks and features I would use in the process.
+
+![The initial Wireframe](./docs/images/ux-wireframe.jpg)
+
+I refactored and organized the code in to the following structure:
+
+- root
+    - public
+    - src
+        - api: consists of the api service and giphy endpoints
+        - assets: consists of images, can host the fonts or other assets later.
+        - components: three main components of the layout with each of their child components
+            -   Modal
+            -   Content (body)
+            -   Navbar
+        - context: The global state of our application, functional logics, and where api calls merge into state.
+        - layout: The folder that would consist different application layout, only consisting a singe default layout in this project.
+        - types: global manually written giphy typescript type modules.
+
+### Demo
+
+A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](#)
+
+![DEMO IMAGE](./docs/images/demo-image.jpg)
+
+### Notes
+
+* Overall, I tried to include intention-revealing names for all variables to keep the code undestandable for others.
+* I tested the app for responsiveness on 14 development device screens, expecting it be functionally responsive. 
+* While the app is mannually end to end tested. The challenge timeline confinded me to skip unit test writing, but I can add in a later commit.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -28,16 +63,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 

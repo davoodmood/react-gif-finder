@@ -1,4 +1,4 @@
-declare module gyphyData {
+declare module giphyData {
 
     export interface Original {
         height: string;
@@ -242,7 +242,7 @@ declare module gyphyData {
         onsent: Onsent;
     }
 
-    export interface GyphyDataObject {
+    export interface GiphyDataObject {
         type: string;
         id: string;
         url: string;

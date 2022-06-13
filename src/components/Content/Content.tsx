@@ -58,7 +58,7 @@ function Content() {
             
         </div>
         <div className='gridContainer'>
-            {gifs.length > 0 && gifs.map((gif: gyphyData.GyphyDataObject) => {
+            {gifs.length > 0 && gifs.map((gif: giphyData.GiphyDataObject) => {
                 return (
                     <Card key={gif.id} id={gif.id} imageUri={gif.images.downsized_still.url}/>
                 )

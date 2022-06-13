@@ -5,26 +5,16 @@ import api from "../api"
 const GifContext = createContext<any>({});
 
 function useProvideGif() {
-    const [gifs, setGifs] = useState<gyphyData.GyphyDataObject[]>([]);
-    const [selectedGif, setSelectedGif] = useState<gyphyData.GyphyDataObject | null>(null);
-    const pagination = useRef<gyphyPagination.gyphyPaginationObject>({
-        count: 15,
+    const [gifs, setGifs] = useState<giphyData.GiphyDataObject[]>([]);
+    const [selectedGif, setSelectedGif] = useState<giphyData.GiphyDataObject | null>(null);
+    const pagination = useRef<giphyPagination.giphyPaginationObject>({
+        count: 12,
         offset: 0,
-        total_count: 15
+        total_count: 12
     })
-    // async function fetchGifs({limit, offset, rating, lang, query}: apiParams) {
-    //     try {
-    //         const response = await api.fetchTrending();
-    //         console.log("response from Trending API: \n",
-    //         response
-    //         );
-    //         setGifs(response);
-    //     } catch (error: any) {
-    //         console.error(error)
-    //     }
-    // }
+
     const handleSelectedGif = (id: string) => {
-        const filteredSelectedGif: NonNullable<gyphyData.GyphyDataObject[]> = gifs.filter((gif: gyphyData.GyphyDataObject) => gif.id === id);
+        const filteredSelectedGif: NonNullable<giphyData.GiphyDataObject[]> = gifs.filter((gif: giphyData.GiphyDataObject) => gif.id === id);
         setSelectedGif(filteredSelectedGif[0]);
     }
 
@@ -50,9 +40,9 @@ function useProvideGif() {
             } catch (error: any) {
                 console.error(error)
                 pagination.current = {
-                    count: 15,
+                    count: 12,
                     offset: 0,
-                    total_count: 15
+                    total_count: 12
                 }
             }
         }
