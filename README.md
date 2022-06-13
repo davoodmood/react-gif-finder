@@ -7,7 +7,7 @@ The Gif Finder is a simple app challenge completed in around 3.5 hours for the o
 
 I initially drew a quick wireframe as a visual guide to pre-plan a layout and facilitate a mental roadmap of which react hooks and features I would use in the process.
 
-![The initial Wireframe](./docs/images/ux-wireframe.jpg)(#)
+[![The initial Wireframe](./docs/images/ux-wireframe.jpg)](#)
 
 I refactored and organized the code in to the following structure:
 
@@ -28,7 +28,7 @@ I refactored and organized the code in to the following structure:
 
 A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](https://react-giphy-gif-finder.vercel.app/)
 
-![DEMO IMAGE](./docs/images/demo-image.jpg)(https://react-giphy-gif-finder.vercel.app/)
+[![DEMO IMAGE](./docs/images/demo-image.jpg)](https://react-giphy-gif-finder.vercel.app/)
 
 ### Notes
 
