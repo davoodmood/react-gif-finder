@@ -1,13 +1,13 @@
 # React Gif Finder App Challenge
 
-The Gif Finder is a simple app challenge completed in around 3.5 hours for the bare bone of the project. I spend some extra time on refactoring the code, manually testing the app and add responsive styling to some sections. I decided to bootstrap the app with bootstrapped with [Create React App](https://github.com/facebook/create-react-app), becasue it is a recommendation from the react docs and facilitates the initialization of a bare bone project. For the app styling I used `css` over `sass` becasue I'm usually having more fun with that for quick small projects.
+The Gif Finder is a simple app challenge completed in around 3.5 hours for the overall of the project. I spend some extra time on refactoring the code, manually testing the app and add responsive styling to some sections. I decided to bootstrap the app with [Create React App](https://github.com/facebook/create-react-app), becasue it is a recommendation from the react docs and facilitates the initialization of a bare bone project. For the app styling I used `css` over `sass` becasue I'm usually having more fun with that for quick small projects.
 
 
 ## Project Structure
 
 I initially drew a quick wireframe as a visual guide to pre-plan a layout and facilitate a mental roadmap of which react hooks and features I would use in the process.
 
-![The initial Wireframe](./docs/images/ux-wireframe.jpg)
+![The initial Wireframe](./docs/images/ux-wireframe.jpg)(#)
 
 I refactored and organized the code in to the following structure:
 
@@ -26,9 +26,9 @@ I refactored and organized the code in to the following structure:
 
 ### Demo
 
-A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](#)
+A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](https://react-giphy-gif-finder.vercel.app/)
 
-![DEMO IMAGE](./docs/images/demo-image.jpg)
+![DEMO IMAGE](./docs/images/demo-image.jpg)(https://react-giphy-gif-finder.vercel.app/)
 
 ### Notes
 
@@ -37,11 +37,18 @@ A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](#)
 * While the app is mannually end to end tested. The challenge timeline confinded me to skip unit test writing, but I can add in a later commit.
 
 
-## Available Scripts
+## RUN IT YOURSELF
+
+You can find the example `.env-example` file in the root of the repo. Please set your `API Key` and rename the file to either of the following each for their environment purpose:
+
+* `.env.developement`
+* `.env.development.local`
+* `.env.test.local`
+* `.env.production.local`
 
 In the project directory, you can run:
 
-### `npm dev`
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
