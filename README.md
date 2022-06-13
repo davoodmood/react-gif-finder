@@ -1,6 +1,6 @@
 # React Gif Finder App Challenge
 
-The Gif Finder is a simple app challenge completed in around 3.5 hours for the overall of the project. I spend some extra time on refactoring the code, manually testing the app and add responsive styling to some sections. I decided to bootstrap the app with [Create React App](https://github.com/facebook/create-react-app), becasue it is a recommendation from the react docs and facilitates the initialization of a bare bone project. For the app styling I used `css` over `sass` becasue I'm usually having more fun with that for quick small projects.
+The Gif Finder is a simple app challenge completed in around 3.5 hours for the overall of the project. I spend some extra time on refactoring the code, manually testing the app and add responsive styling to some sections. I decided to bootstrap the app with [Create React App](https://github.com/facebook/create-react-app){:target="_blank"}, becasue it is a recommendation from the react docs and facilitates the initialization of a bare bone project. For the app styling I used `css` over `sass` becasue I'm usually having more fun with that for quick small projects.
 
 
 ## Project Structure
@@ -26,9 +26,9 @@ I refactored and organized the code in to the following structure:
 
 ### Demo
 
-A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](https://react-giphy-gif-finder.vercel.app/)
+A live view of the app is deployed on `Vercel` and you can [PREVIEW HERE](https://react-giphy-gif-finder.vercel.app/){:target="_blank"}
 
-[![DEMO IMAGE](./docs/images/demo-image.jpg)](https://react-giphy-gif-finder.vercel.app/)
+[![DEMO IMAGE](./docs/images/demo-image.jpg)](https://react-giphy-gif-finder.vercel.app/){:target="_blank"}
 
 ### Notes
 
@@ -51,7 +51,7 @@ In the project directory, you can run:
 ### `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000){:target="_blank"} to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -59,7 +59,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests){:target="_blank"} for more information.
 
 ### `npm run build`
 
@@ -69,10 +69,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment){:target="_blank"} for more information.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started){:target="_blank"}.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/){:target="_blank"}.
